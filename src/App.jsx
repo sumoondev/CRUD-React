@@ -1,22 +1,13 @@
+import Items from "./components/Items";
+import { groceryItems } from "./data/groceryItems";
 import "./App.css";
 
-function App() {
-    return (
-        <>
-            <section class="section-center">
-                <div>
-                    <h1>
-                        Grocery List
-                    </h1>
-                </div>
-                <div id="app">
-                    <div class="items">
-                        <button class="add-btn">Add</button>
-                    </div>
-                </div>
-            </section>
-        </>
-    );
-}
+const App = () => {
+  return (
+    <section className="section-center">
+      <Items items={groceryItems} />
+    </section>
+  );
+};
 
 export default App;
