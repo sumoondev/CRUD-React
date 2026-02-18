@@ -8,6 +8,7 @@ form h2 {
 .form-control {
     display: grid;
     grid-template-columns: 1fr 100px;
+    padding-bottom: 1rem;
 }
 
 .form-input {
@@ -23,10 +24,14 @@ form h2 {
     color: #aaa;
 }
 
+.form-control .btn i {
+    transition: 0.2s;
+}
+
 .form-control .btn {
     cursor: pointer;
     color: #fff;
-    background: #06b6d4;
+    background: #0ea5e9;
     border: transparent;
     border-radius: 0;
     border-top-right-radius: 0.25rem;
@@ -36,5 +41,9 @@ form h2 {
 }
 
 .form-control .btn:hover {
-    background: #0e7490;
+    background: #0284c7;
+}
+
+.form-control .btn:hover i {
+    transform: scale(1.15);
 }
