@@ -1,13 +1,13 @@
 import { FiEdit, FiTrash2 } from "react-icons/fi";
 import "./SingleItem.css";
 
-const SingleItem = ({ item }) => {
+const SingleItem = ({ item, editCompleted }) => {
     return (
         <div className="single-item">
             <input
                 type="checkbox"
                 checked={item.completed}
-                onChange={() => null}
+                onChange={() => editCompleted(item.id)}
             />
             <p
                 style={{
