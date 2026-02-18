@@ -1,5 +1,5 @@
 import Items from "./components/Items";
-import { groceryItems } from "./data/groceryItems";
+import { groceryItems } from "./data/data";
 import "./App.css";
 
 const App = () => {
